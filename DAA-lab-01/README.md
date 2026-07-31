@@ -47,5 +47,5 @@ Transition to 1 starts at index: 4
 Program 6. Element Uniqueness
 Output:
 Duplicates found.
-Conclusion for sufficiently large $n$:
+Conclusion for sufficiently large n:
 Sorting the array takes O(nlog n) time and a subsequent linear scan takes O(n) time. For sufficiently large values of n, this O(nlog n) approach is far more efficient than the naive O(n^2) method of comparing every pair of numbers.
