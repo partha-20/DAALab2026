@@ -1,10 +1,9 @@
 // DAA Lab 01
 
 ID - B525039
-
+```
 Program 1. Put them in Order
 Output:
-```
 log2(n)
 n^0.51
 12*sqrt(n)
