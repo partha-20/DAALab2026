@@ -1,0 +1,19 @@
+DataStructure,N,SearchTime
+Unsorted Array O(n),20000,47.0000
+Sorted Array O(log n),20000,0.0600
+Constant Access O(1),20000,0.0000
+Unsorted Array O(n),40000,76.0000
+Sorted Array O(log n),40000,0.0400
+Constant Access O(1),40000,0.0020
+Unsorted Array O(n),60000,100.0000
+Sorted Array O(log n),60000,0.1600
+Constant Access O(1),60000,0.0000
+Unsorted Array O(n),80000,142.0000
+Sorted Array O(log n),80000,0.0000
+Constant Access O(1),80000,0.0000
+Unsorted Array O(n),100000,200.0000
+Sorted Array O(log n),100000,0.0300
+Constant Access O(1),100000,0.0020
+Unsorted Array O(n),120000,211.0000
+Sorted Array O(log n),120000,0.1500
+Constant Access O(1),120000,0.0000

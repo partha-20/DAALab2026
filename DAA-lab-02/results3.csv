@@ -1,0 +1,13 @@
+DataStructure,K,ExecutionTime
+Method 1 Iterative O(nk^2),10,0.00
+Method 2 Pairwise O(nk log k),10,0.00
+Method 1 Iterative O(nk^2),20,22000.00
+Method 2 Pairwise O(nk log k),20,0.00
+Method 1 Iterative O(nk^2),30,9000.00
+Method 2 Pairwise O(nk log k),30,10000.00
+Method 1 Iterative O(nk^2),40,22000.00
+Method 2 Pairwise O(nk log k),40,9000.00
+Method 1 Iterative O(nk^2),50,31000.00
+Method 2 Pairwise O(nk log k),50,12000.00
+Method 1 Iterative O(nk^2),60,32000.00
+Method 2 Pairwise O(nk log k),60,16000.00

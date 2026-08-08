@@ -1,0 +1,13 @@
+DataStructure,N,ExecutionTime
+Standard 2-Way Merge Sort,20000,4400.00
+Modified 3-Way Merge Sort,20000,4000.00
+Standard 2-Way Merge Sort,40000,9100.00
+Modified 3-Way Merge Sort,40000,6800.00
+Standard 2-Way Merge Sort,60000,16500.00
+Modified 3-Way Merge Sort,60000,11700.00
+Standard 2-Way Merge Sort,80000,20700.00
+Modified 3-Way Merge Sort,80000,12700.00
+Standard 2-Way Merge Sort,100000,27400.00
+Modified 3-Way Merge Sort,100000,15400.00
+Standard 2-Way Merge Sort,120000,31200.00
+Modified 3-Way Merge Sort,120000,19800.00
