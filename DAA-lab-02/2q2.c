@@ -9,9 +9,8 @@ double get_time_us(clock_t start, clock_t end) {
     return ((double)(end - start) / CLOCKS_PER_SEC) * 1000000.0;
 }
 
-// ----------------------------------------------------
 // Standard 2-Way Merge Sort
-// ----------------------------------------------------
+
 void merge2(int arr[], int l, int m, int r) {
     int n1 = m - l + 1;
     int n2 = r - m;
@@ -44,9 +43,8 @@ void mergeSort2(int arr[], int l, int r) {
     }
 }
 
-// ----------------------------------------------------
 // Modified 3-Way Merge Sort
-// ----------------------------------------------------
+
 void merge3(int arr[], int l, int m1, int m2, int r) {
     int n1 = m1 - l + 1;
     int n2 = m2 - m1;
@@ -114,9 +112,8 @@ void mergeSort3(int arr[], int l, int r) {
     merge3(arr, l, m1, m2, r);
 }
 
-// ----------------------------------------------------
 // Main Execution
-// ----------------------------------------------------
+
 int main() {
     srand(42);
 
@@ -138,7 +135,7 @@ int main() {
 
         for (int i = 0; i < n; i++) orig[i] = rand();
 
-        // --- Benchmark 2-Way Merge Sort ---
+        // 2-Way Merge Sort
         clock_t start = clock();
         for (int iter = 0; iter < iterations; iter++) {
             for (int i = 0; i < n; i++) work[i] = orig[i];
@@ -148,7 +145,7 @@ int main() {
         double time2 = get_time_us(start, end) / iterations;
         fprintf(fp, "Standard 2-Way Merge Sort,%d,%.2f\n", n, time2);
 
-        // --- Benchmark 3-Way Merge Sort ---
+        // 3-Way Merge Sort 
         start = clock();
         for (int iter = 0; iter < iterations; iter++) {
             for (int i = 0; i < n; i++) work[i] = orig[i];
