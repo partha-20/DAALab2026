@@ -33,7 +33,7 @@ int main() {
 
         clock_t start = clock();
         for (int iter = 0; iter < iterations; iter++) {
-            int target = -1; // Force worst-case scanning to the end
+            int target = -1;
             for (int j = 0; j < n; j++) {
                 if (u_arr[j] == target) break;
             }
@@ -48,8 +48,8 @@ int main() {
         for (int j = 0; j < n; j++) s_arr[j] = j * 2;
 
         start = clock();
-        for (int iter = 0; iter < iterations * 100; iter++) { // Higher iteration count for precision
-            int target = n * 2 + 1; // Force worst-case search fail
+        for (int iter = 0; iter < iterations * 100; iter++) {
+            int target = n * 2 + 1;
             int low = 0, high = n - 1;
             while (low <= high) {
                 int mid = low + (high - low) / 2;
