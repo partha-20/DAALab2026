@@ -1,0 +1,7 @@
+Algorithm
+	Sort S: Sort the array of n integers in ascending order using Quick Sort or Merge Sort in O(n log⁡n ) time.
+	Recursive / Iterative Reduction:
+	Fix the first k-2 elements using k-2 nested loops. For each combination of indices (i_1,i_2,…,i_(k-2) ), compute the remaining required sum:
+〖"Target" 〗_"rem" =T-(S[i_1 ]+S[i_2 ]+⋯+S[i_(k-2) ])
+	For the remaining 2 elements, run a Two-Pointer search over the sub-array range [i_(k-2)+1,n-1] in linear O(n) time (or perform a binary search for every (k-1)-th element in O(log⁡n ) time).
+	Complexity: Fix k-2 elements (O(n^(k-2) ) combinations) and run the 2-pointer scan (O(n)) or binary search (O(log⁡n )). This yields an overall runtime bound of O(n^(k-1) ) using two-pointers, which satisfies the target bound of O(n^(k-1)  log⁡n ).

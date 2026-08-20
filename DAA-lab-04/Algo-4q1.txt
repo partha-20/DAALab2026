@@ -1,0 +1,7 @@
+Algorithm & Input Representation
+•	Representation: An array of struct Item containing an integer number and an enum/integer colour (RED = 0, BLUE = 1, YELLOW = 2).
+•	Algorithm Steps:
+1.	Count the occurrences of each color in a frequency array.
+2.	Compute prefix sums to determine the starting index for each color in the output array.
+3.	Traverse the original array and place each element into its corresponding position in a temporary output array.
+4.	Copy the sorted elements back to the original array.

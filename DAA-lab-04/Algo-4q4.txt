@@ -1,0 +1,9 @@
+Algorithm
+	Transform Data: Convert each person's entry (a_i) and exit (b_i) times into 2n individual events:
+	An Entry Event represented as (a_i,+1)
+	An Exit Event represented as (b_i,-1)
+	Sort Events: Sort all 2n events in ascending order by timestamp in O(n logn ) time.
+	Sweep Line Traversal: Iterate through the sorted events while maintaining a running counter (current_count) of people currently at the party:
+	Add +1 for an entry event and -1 for an exit event.
+	If current_count exceeds max_count, update max_count and record the timestamp as the peak start time.
+	Output: Return max_count and the corresponding peak timestamp.

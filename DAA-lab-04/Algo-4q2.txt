@@ -1,0 +1,10 @@
+Algorithm
+	Sort S_1 in ascending order in O(n logn ) time using Quick Sort or Merge Sort.
+	Sort S_2 in ascending order in O(n logn ) time.
+	Use a Two-Pointer Approach:
+	Place pointer i at the beginning of S_1 (smallest element) and pointer j at the end of S_2 (largest element).
+	While i < n and j >= 0:
+	If S_1 [i]+S_2 [j]==x, a matching pair is found.
+	If S_1 [i]+S_2 [j]<x, increment i to increase the sum.
+	If S_1 [i]+S_2 [j]>x, decrement j to decrease the sum.
+	The two-pointer traversal takes O(n) time, keeping the overall time complexity bound to O(n logn ).

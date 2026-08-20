@@ -1,0 +1,8 @@
+Algorithm
+	Sort Intervals: Sort the array of intervals in ascending order based on their starting points (x_i). Sorting n intervals takes O(n logn ) time.
+	Linear Merge Pass:
+	Initialize a result container with the first interval.
+	Iterate through the remaining intervals from index 1 to n-1:
+	Compare the current interval (x_i,y_i ) with the last interval in the result (x_"last" ,y_"last"  ).
+	Overlap Condition: If x_i≤y_"last" , the intervals overlap. Merge them by updating the end boundary: y_"last" =max⁡(y_"last" ,y_i ).
+	No Overlap Condition: If x_i>y_"last" , add (x_i,y_i ) as a new interval to the result list.

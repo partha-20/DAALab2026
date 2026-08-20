@@ -1,0 +1,10 @@
+Algorithm
+	Transform Data: For each interval (l_i,r_i ), create two event objects:
+	A Start Event at coordinate l_i with type +1.
+	An End Event at coordinate r_i with type -1.
+	Sort Events: Sort all 2n events in ascending order by their coordinate value.
+	Tie-Breaking Rule: Since endpoints count as being inside their respective interval, if a start event and an end event occur at the exact same coordinate, process the start event (+1) before the end event (-1).
+	Sweep Line Traversal: Iterate through the sorted events while maintaining a running count (current_overlap) of active intervals:
+	Add +1 for start events and -1 for end events.
+	Whenever current_overlap exceeds max_overlap, update max_overlap and record the current event's coordinate as point p.
+	Output: Return point p along with max_overlap.
