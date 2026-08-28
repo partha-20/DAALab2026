@@ -1,0 +1,6 @@
+Time Complexity: Average Case: O(N) — The expected recurrence relation is T(N) = T(N/2) + O(N), resolving to linear time complexity.
+Worst Case: O(N^2) — Happens when bad pivots are picked repeatedly.
+Best Case: O(N) — Achieved when the median element is consistently chosen as the pivot.
+Space Complexity: O(1) auxiliary space without considering call stack;
+O(log N) call stack depth on average,
+O(N) in worst case.

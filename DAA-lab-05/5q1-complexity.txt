@@ -1,0 +1,7 @@
+Time Complexity
+:Average Case: O(N) — In each step, the partitioning algorithm processes an array roughly half the size of the previous iteration ($N + N/2 + N/4 + ... = 2N = O(N)$).
+Worst Case: O(N^2) — Occurs when the pivot selection consistently yields the smallest or largest element (e.g., already sorted array with the last element chosen as pivot).
+Best Case: O(N) — Occurs when the pivot divides the array into equal halves at each recursion step.
+Space Complexity: O(1) auxiliary space (ignoring call stack).
+With the recursive call stack, average space is O(log N) and
+worst-case space is O(N).

@@ -1,0 +1,13 @@
+Time Complexity:
+
+Building Max Heap: O(N) — Modifying bottom-up non-leaf nodes takes linear overall time.
+
+Heapify Process: O(N log N) — Extracting the root element N times takes log N per swap and re-heapify operation.
+
+Best Case: O(N log N)
+
+Average Case: O(N log N)
+
+Worst Case: O(N log N) — Guaranteed run-time efficiency regardless of input sequence distribution.
+
+Space Complexity: O(1) auxiliary space (an in-place sorting algorithm, excluding the main array allocation).
